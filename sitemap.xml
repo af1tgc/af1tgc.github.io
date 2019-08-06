@@ -3,16 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://af1tgc.github.io/post/mark-down-test/</loc>
-  </url>
-  
-  <url>
     <loc>https://af1tgc.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/post/</loc>
     <priority>0</priority>
   </url>
   
