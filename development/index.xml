@@ -25,15 +25,5 @@ Hugo를 사용해야겠다고 생각한 이유는 chann.kr 글에 공감을 했�
 golang 설치 sugo apt-get install golang #golang이 설치가 되지 않을 경우, apt-get update를 실행한다.</description>
     </item>
     
-    <item>
-      <title>Open Development Pages</title>
-      <link>https://af1tgc.github.io/development/open-development-pages/</link>
-      <pubDate>Wed, 07 Aug 2019 09:34:05 +0900</pubDate>
-      
-      <guid>https://af1tgc.github.io/development/open-development-pages/</guid>
-      <description>:::python import sys, os
-print(&amp;ldquo;안녕하세요&amp;rdquo;)</description>
-    </item>
-    
   </channel>
 </rss>

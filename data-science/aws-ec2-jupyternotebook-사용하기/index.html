@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>Et Cetera</title>
+<title>AWS-EC2에서의 Jupyter NoteBook 사용기</title>
 <meta name="generator" content="Hugo 0.40.1" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -59,8 +59,8 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>Et Cetera</h1>
-<h4>Published 08-07-2019 09:36:34</h4>
+<h1>AWS-EC2에서의 Jupyter NoteBook 사용기</h1>
+<h4>Published 08-07-2019 15:06:03</h4>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
 <script>!function (d, s, id) {
@@ -73,7 +73,7 @@
     }
 }(document, 'script', 'twitter-wjs');</script>
 
-<div class="fb-share-button" data-href="https://af1tgc.github.io/etc/et-cetera/" data-layout="button"></div>
+<div class="fb-share-button" data-href="https://af1tgc.github.io/data-science/aws-ec2-jupyternotebook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" data-layout="button"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -85,6 +85,55 @@
 
 <article>
     
+
+<h2 id="intro">[Intro]</h2>
+
+<p>최근에 컴퓨팅 환경에 대한 생각이 바뀌면서 Surface Go를 구입하게 되었다.
+학교에서 제공하는 무제한 Google Drive나 OneDrive으로의 환경통합/데스크탑으로의 원격엑세스/IaSS 환경사용 등이 그 영향을 주었고,</p>
+
+<p>이로써 가지고 있는 장비는</p>
+
+<ol>
+<li>Surface Go</li>
+<li>HP Spectre</li>
+<li>MacBook Air 13&rsquo;</li>
+<li>Desktop</li>
+</ol>
+
+<p>이 되었다. 현재 주력으로 사용하고 있는 모델은 단연 Surface Go.
+&gt; 회사에서 제공하는 X1 Carbon, HP EliteBook 까지 포함하면&hellip;</p>
+
+<p>물론 로컬 환경에서의 컴퓨팅은 제약이 많지만, 서피스펜을 활용한 메모용/터미널 머신으로 사용하기에는 전혀 무리가 없다.
+머신러닝/딥러닝 용도로써 AWS를 선택한 이유는 단지 단기간의 프리티어 사용이며<s>(아직 학습용이다.)</s>,
+추후에는 거주지의 데스크탑을 활용할 예정이다.</p>
+
+<p>#</p>
+
+<h2 id="environment">[Environment]</h2>
+
+<p>EC2의 AMI는 다음을 선택했다. - Deep Learning Base AMI (Ubuntu) Version 18.1 - <a href="https://docs.aws.amazon.com/ko_kr/dlami/latest/devguide/gs.html">Guide</a>
+스토리지 종류를 바꾸면 프리티어 사용이 가능하다. (물론 t2-micro를 선택한다.)</p>
+
+<p>사실 위에 언급한 AMI를 사용하면 많은 추가 설정 필요없이 사용이 가능하며, 아마존 공식 문서를 참고하면 쉽게 설정이 가능하다.
+&gt; 참고한 문서는 추후 업데이트 예정</p>
+
+<p>#</p>
+
+<h2 id="now">[Now]</h2>
+
+<p>그리하여 현재는 다음 쉘스크립트를 실행하여 localhost:8889로 주피터 노트북을 실행하여 쓰고있다.
+언제 어디서나 어떤PC를 가지고도 사용환경 그대로 개발할 수 있다는 장점!</p>
+
+<h3 id="windows-git-bash">Windows Git Bash</h3>
+
+<pre><code>ssh -i &quot;DL_AMI.pem&quot; -N -f -L 8889:localhost:8888 {ec2-account}@{ec2-address}
+</code></pre>
+
+<h3 id="ec2-shell">EC2 Shell</h3>
+
+<pre><code>jupyter notebook --certfile=~/ssl/mycert.pem --keyfile ~/ssl/mykey.key &amp;
+</code></pre>
+
 </article>
 
 
