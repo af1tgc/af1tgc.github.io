@@ -118,29 +118,27 @@ Hugo와 Github Page 연동 과정에서 겪었던 사소한 어려움을 포함�
 
 <p>구축한 환경은 WSL(Windows Subsystem for Linux)을 활용하였다.</p>
 
-<ul>
-<li><p>golang 설치</p>
+<h1 id="golang-설치">golang 설치</h1>
 
-<p>#!/bin/bash
-sugo apt-get install golang
-#golang이 설치가 되지 않을 경우, apt-get update를 실행한다.</p></li>
+<pre><code>sugo apt-get install golang
+#golang이 설치가 되지 않을 경우, apt-get update를 실행한다.
+</code></pre>
 
-<li><p>Hugo 설치</p>
+<h1 id="hugo-설치">Hugo 설치</h1>
 
-<p>#!/bin/bash
-sudo apt-get install hugo</p></li>
+<pre><code>#!/bin/bash
+sudo apt-get install hugo
+</code></pre>
 
-<li><p>git 설치</p>
+<h1 id="git-설치">git 설치</h1>
 
-<p>#!/bin/bash
-sudo apt-get install git</p></li>
-</ul>
+<pre><code>#!/bin/bash
+sudo apt-get install git
+</code></pre>
 
-<blockquote>
-<p>TIPS)
+<p><code>TIPS)</code>
 Github Page와 관련하여, 페이지 종류에는 2가지가 있다.
 Page용 레포지토리의 설정에서 Repository Name에 기입되는 값에 따라 접속 URL이 변경된다.</p>
-</blockquote>
 
 <ol>
 <li>{username}.github.io - <a href="https://{username}.github.io">https://{username}.github.io</a></li>
@@ -157,21 +155,18 @@ hugo new site {sitename}
 
 <p><a href="https://themes.gohugo.io/">Hugo Template</a>를 선택하고 git clone을 통해 받아온다.</p>
 
-<p>#!/bin/bash
-   cd {sitename}/themes
-   git clone {repository_of_theme}</p>
+<pre><code>cd {sitename}/themes
+git clone {repository_of_theme}
+</code></pre>
 
-<blockquote>
-<p>TIPS)
+<p><code>TIPS)</code>
 theme디렉토리 하위에 테마명으로 된 디렉토리가 있어야한다.</p>
-</blockquote>
 
 <h2 id="configuration">[Configuration]</h2>
 
 <p>Hugo의 설정은 프로젝트 최상위 디렉토리내 config.toml파일에서 진행하면된다.</p>
 
-<pre><code>#!/bin/bash
-baseURL = &quot;https://af1tgc.github.io
+<pre><code>baseURL = &quot;https://af1tgc.github.io
 languageCode = &quot;en-us&quot;
 title = &quot;Yosub&quot;
 theme = &quot;code-editor&quot;
@@ -193,8 +188,7 @@ config.toml 파일에 category 및 tag 와 같은 Taxonomies 변수를 설정하
 
 <p>설정이 완료되었으면 Github Pages와 연동을 진행한다.</p>
 
-<pre><code>#!/bin/bash
-cd public
+<pre><code>cd public
 git init
 git add .
 git commit -m &quot;initial commit&quot;
@@ -205,16 +199,14 @@ git push origin master
 <p>[Posting]
 글 작성은 다음과 같은 명령어를 통해 진행한다.</p>
 
-<pre><code>#/bin/bash
-hugo new {dir}/{post-content}.md
+<pre><code>hugo new {dir}/{post-content}.md
 </code></pre>
 
 <p>글의 형식은 <a href="https://sourceforge.net/p/hugo-generator/wiki/markdown_syntax/#md_ex_headers">마크다운</a>으로 작성하면 된다. 마음껏!</p>
 
 <p>이후 Github에 push를 진행한다.</p>
 
-<pre><code>#!/bin/bash
-cd {sitename}
+<pre><code>cd {sitename}
 hugo
 cd public
 git add .
@@ -224,9 +216,7 @@ git push origin master
 
 <blockquote>
 <p>TIPS)
-Hugo 에서 제공하는 push 자동화 쉘스트립트이다.
-    #!/bin/bash
-    #!/bin/sh</p>
+Hugo 에서 제공하는 push 자동화 쉘스트립트이다.</p>
 </blockquote>
 
 <pre><code># If a command fails then the deploy stops
