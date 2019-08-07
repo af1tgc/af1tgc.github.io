@@ -17,9 +17,8 @@
       <pubDate>Wed, 07 Aug 2019 09:34:05 +0900</pubDate>
       
       <guid>https://af1tgc.github.io/development/open-development-pages/</guid>
-      <description>http://yosub.kr
-This is a Huge Header :::python import sys, os
-print(&amp;ldquo;안녕하세요&amp;rdquo;)</description>
+      <description> http://yosub.kr
+This is a Huge Header #/usr/bin/python import sys, os print(&amp;quot;안녕하세요&amp;quot;)  </description>
     </item>
     
   </channel>
