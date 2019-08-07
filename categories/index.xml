@@ -6,17 +6,70 @@
     <description>Recent content in Categories on Yosub</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 09:12:07 +0900</lastBuildDate>
     
 	<atom:link href="https://af1tgc.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title> Data Science</title>
-      <link>https://af1tgc.github.io/categories/-data-science/</link>
-      <pubDate>Wed, 07 Aug 2019 09:12:07 +0900</pubDate>
+      <title>Data Science</title>
+      <link>https://af1tgc.github.io/categories/data-science/</link>
+      <pubDate>Wed, 07 Aug 2019 09:34:28 +0900</pubDate>
       
-      <guid>https://af1tgc.github.io/categories/-data-science/</guid>
+      <guid>https://af1tgc.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://af1tgc.github.io/categories/development/</link>
+      <pubDate>Wed, 07 Aug 2019 09:34:05 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Et Cetera</title>
+      <link>https://af1tgc.github.io/categories/et-cetera/</link>
+      <pubDate>Wed, 07 Aug 2019 09:36:34 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/et-cetera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forensic</title>
+      <link>https://af1tgc.github.io/categories/forensic/</link>
+      <pubDate>Wed, 07 Aug 2019 09:34:51 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/forensic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacking</title>
+      <link>https://af1tgc.github.io/categories/hacking/</link>
+      <pubDate>Wed, 07 Aug 2019 09:35:09 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathmatices</title>
+      <link>https://af1tgc.github.io/categories/mathmatices/</link>
+      <pubDate>Wed, 07 Aug 2019 09:35:31 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/mathmatices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memo</title>
+      <link>https://af1tgc.github.io/categories/memo/</link>
+      <pubDate>Wed, 07 Aug 2019 09:35:44 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/categories/memo/</guid>
       <description></description>
     </item>
     
