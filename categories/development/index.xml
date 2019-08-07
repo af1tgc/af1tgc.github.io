@@ -31,17 +31,8 @@ golang 설치 sugo apt-get install golang #golang이 설치가 되지 않을 경
       <pubDate>Wed, 07 Aug 2019 09:34:05 +0900</pubDate>
       
       <guid>https://af1tgc.github.io/development/open-development-pages/</guid>
-      <description> http://yosub.kr
-This is a Huge Header #/usr/bin/python import sys, os print(&amp;quot;안녕하세요&amp;quot;)  </description>
-    </item>
-    
-    <item>
-      <title>Development 1</title>
-      <link>https://af1tgc.github.io/post/development-1/</link>
-      <pubDate>Wed, 07 Aug 2019 09:28:59 +0900</pubDate>
-      
-      <guid>https://af1tgc.github.io/post/development-1/</guid>
-      <description>##Development-1##</description>
+      <description>:::python import sys, os
+print(&amp;ldquo;안녕하세요&amp;rdquo;)</description>
     </item>
     
   </channel>

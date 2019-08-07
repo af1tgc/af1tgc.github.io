@@ -13,54 +13,12 @@
   </url>
   
   <url>
-    <loc>https://af1tgc.github.io/memo/open-memo-pages/</loc>
-    <lastmod>2019-08-07T09:35:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/mathmatices/open-mathmatices-pages/</loc>
-    <lastmod>2019-08-07T09:35:31+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/hacking/open-hacking-pages/</loc>
-    <lastmod>2019-08-07T09:35:09+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/forensic/open-forensic-pages/</loc>
-    <lastmod>2019-08-07T09:34:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/data-science/open-data-science-pages/</loc>
-    <lastmod>2019-08-07T09:34:28+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://af1tgc.github.io/development/open-development-pages/</loc>
     <lastmod>2019-08-07T09:34:05+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://af1tgc.github.io/post/development-1/</loc>
-    <lastmod>2019-08-07T09:28:59+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://af1tgc.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/categories/data-science/</loc>
-    <lastmod>2019-08-07T09:34:28+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/data-science/</loc>
-    <lastmod>2019-08-07T09:34:28+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,60 +43,6 @@
   <url>
     <loc>https://af1tgc.github.io/etc/</loc>
     <lastmod>2019-08-07T09:36:34+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/categories/forensic/</loc>
-    <lastmod>2019-08-07T09:34:51+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/forensic/</loc>
-    <lastmod>2019-08-07T09:34:51+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/categories/hacking/</loc>
-    <lastmod>2019-08-07T09:35:09+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/hacking/</loc>
-    <lastmod>2019-08-07T09:35:09+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/mathmatices/</loc>
-    <lastmod>2019-08-07T09:35:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/categories/mathmatices/</loc>
-    <lastmod>2019-08-07T09:35:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/categories/memo/</loc>
-    <lastmod>2019-08-07T09:35:44+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/memo/</loc>
-    <lastmod>2019-08-07T09:35:44+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://af1tgc.github.io/post/</loc>
-    <lastmod>2019-08-07T09:28:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
