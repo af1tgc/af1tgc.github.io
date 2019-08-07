@@ -131,12 +131,12 @@
 <p>그리하여 현재는 다음 쉘스크립트를 실행하여 localhost:8889로 주피터 노트북을 실행하여 쓰고있다.
 언제 어디서나 어떤PC를 가지고도 사용환경 그대로 개발할 수 있다는 장점!</p>
 
-<h3 id="windows-git-bash">Windows Git Bash</h3>
+<h3 id="windows-git-bash-local">Windows Git Bash (Local)</h3>
 
 <pre><code>ssh -i &quot;DL_AMI.pem&quot; -N -f -L 8889:localhost:8888 {ec2-account}@{ec2-address}
 </code></pre>
 
-<h3 id="ec2-shell">EC2 Shell</h3>
+<h3 id="ec2-shell-remote">EC2 Shell (Remote)</h3>
 
 <pre><code>jupyter notebook --certfile=~/ssl/mycert.pem --keyfile ~/ssl/mykey.key &amp;
 </code></pre>
