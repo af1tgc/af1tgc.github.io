@@ -6,10 +6,22 @@
     <description>Recent content in Development on Yosub</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 10:58:04 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 20:23:52 +0900</lastBuildDate>
     
 	<atom:link href="https://af1tgc.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Web Tutorial With Golang</title>
+      <link>https://af1tgc.github.io/development/web-tutorial-with-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 20:23:52 +0900</pubDate>
+      
+      <guid>https://af1tgc.github.io/development/web-tutorial-with-golang/</guid>
+      <description>[Intro] 최근 토이프로젝트를 위한 웹 크롤러를 만들기 시작했다. 사실 익숙한 python과 Beautiful Soup 활용하여 빠르게 진행해도 되지만, Golang에 대한 호기심으로 방향을 바꿨다. 하루정도 Tutorial 보면서 접한 Golang의 이미지는 컴파일러 언어답게 상당히 빠르고 간결하며, 여타 프레임워크 없이도 빠르게 배포할 수 있다는 장점이 있는듯 하다.
+ 대형 프로젝트에서는 API서버 위주로 사용할 것이라 생각이 들지만, 간단한 웹페이지는 정말 놀라울 정도로 직관적이게 생성할 수 있다.
+ #
+[Environment] 개발 환경은 몇년째 유지중인 CentOS(개발은 역시 리눅스+빔이지!</description>
+    </item>
     
     <item>
       <title>How to use Hugo with Github</title>

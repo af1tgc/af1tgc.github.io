@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="authors">
+
+<meta name="description" content="">
+
+<title>Web Tutorial With Golang</title>
+<meta name="generator" content="Hugo 0.40.1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+<link  href="https://af1tgc.github.io/css/theme.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="page-container container-fluid">
+<div class="col-md-3 menu">
+    <nav class="col-md-3">
+    
+    <h3 class="home-link"><a href="https://af1tgc.github.io">Root</a></h3>
+    <div id="last-posts" class="open">
+        <h3 data-open="last-posts">Yosub - Most recent posts</h3>
+        <ul>
+            
+            <li><a href="https://af1tgc.github.io/development/web-tutorial-with-golang/">Web Tutorial With Golang</a></li>
+            
+            <li><a href="https://af1tgc.github.io/data-science/aws-ec2-jupyternotebook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">AWS-EC2에서의 Jupyter NoteBook 사용기</a></li>
+            
+            <li><a href="https://af1tgc.github.io/development/%ED%9C%B4%EA%B3%A0-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/">How to use Hugo with Github</a></li>
+            
+            <li><a href="https://af1tgc.github.io/etc/et-cetera/">Et Cetera</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+
+    
+    <div id="categories" class="open">
+        <h3 data-open="categories">Categories</h3>
+        <ul class="categories">
+            
+            <li><a href="/categories/data-science">data-science</a></li>
+            
+            <li><a href="/categories/development">development</a></li>
+            
+            <li><a href="/categories/et-cetera">et-cetera</a></li>
+            
+        </ul>
+    </div>
+    
+</nav>
+
+</div>
+<div class="col-md-9 content">
+
+<h1>Web Tutorial With Golang</h1>
+<h4>Published 08-12-2019 20:23:52</h4>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');</script>
+
+<div class="fb-share-button" data-href="https://af1tgc.github.io/development/web-tutorial-with-golang/" data-layout="button"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en-US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<article>
+    
+
+<h2 id="intro">[Intro]</h2>
+
+<p>최근 토이프로젝트를 위한 웹 크롤러를 만들기 시작했다. 사실 익숙한 python과 Beautiful Soup 활용하여 빠르게 진행해도 되지만,
+Golang에 대한 호기심으로 방향을 바꿨다.
+하루정도 Tutorial 보면서 접한 Golang의 이미지는 컴파일러 언어답게 상당히 빠르고 간결하며, 여타 프레임워크 없이도 빠르게 배포할 수 있다는 장점이 있는듯 하다.</p>
+
+<blockquote>
+<p><s>대형 프로젝트에서는 API서버 위주로 사용할 것이라 생각이 들지만</s>, 간단한 웹페이지는 정말 놀라울 정도로 직관적이게 생성할 수 있다.</p>
+</blockquote>
+
+<p>#</p>
+
+<h2 id="environment">[Environment]</h2>
+
+<p>개발 환경은 몇년째 유지중인 CentOS<s>(개발은 역시 리눅스+빔이지!)</s>와 단지 Golang이며, <a href="https://github.com/af1tgc/Crawler">Github Repository</a>에서 작업진행 상황을 확인할 수 있다.</p>
+
+<p>#</p>
+
+<h2 id="web-with-golang">[Web With Golang?]</h2>
+
+<p><a href="https://golang.org/doc/articles/wiki/">튜토리얼</a>을 진행하고, 프로젝트 디렉토리를 다음과 같이 생성했다.
+    /
+    +&ndash;static/
+        +&ndash;css/
+        +&ndash;images/
+        +&ndash;js/
+        +&ndash;page/
+            +&ndash;{view}.html
+        +&ndash;index.html
+    +&ndash;crawler.go</p>
+
+<p>프로젝트 구조를 보면 현재 코드는.. 단 하나뿐이다! <s>와우!</s></p>
+
+<p>단순히 구조를 설명하면</p>
+
+<p>(1) 뷰페이지 선언 crawler.go - static/{view}.html</p>
+
+<pre><code>func renderTemplate(w http.ResponseWriter, tmpl string, p *Page){
+    t, err := template.ParseFiles(&quot;static/&quot; + tmpl +&quot;.html&quot;)
+    if err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+    err = t.Execute(w, p)
+    if err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+    }
+} 
+</code></pre>
+
+<p>(2) 라우팅 상세 설정 crawler.go</p>
+
+<pre><code>func getCrawlUrlHandler(w http.ResponseWriter, r *http.Request){
+    body := r.FormValue(&quot;body&quot;)
+    p := &amp;Page{Title: title, Body: []byte(body)}
+    renderTemplate(w, &quot;page/getUrl&quot;, p)
+}
+</code></pre>
+
+<blockquote>
+<p>post데이터는 FormValue(&ldquo;body&rdquo;)로 받으면 된다.</p>
+</blockquote>
+
+<p>(3) 라우팅 설정 crawler.go - 8080포트로 서비스</p>
+
+<pre><code>func main(){
+    http.HandleFunc(&quot;/getUrl&quot;, getCrawlUrlHandler)
+    log.Fatal(http.ListenAndServe(&quot;:8080&quot;), nil)
+}
+</code></pre>
+
+<p>..끝이다! <s>야호!</s></p>
+
+<p>(4) 렌더링 페이지 e.g.) /static/getUrl.html</p>
+
+<pre><code>&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;form action=&quot;/back_run&quot; method=&quot;POST&quot;&gt;
+&lt;div&gt;
+&lt;textarea name=&quot;body&quot;&gt;{{printf &quot;%s&quot; .Body}}&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;input type=&quot;submit&quot; value=&quot;submit&quot;&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<blockquote>
+<p>submit된 데이터는 /back_run 라우팅으로 전달되며, 위 라우팅 상세 설정에 새로운 func를 선언하여 값을 받고, 내부적인 처리를 진행하면된다.
+이후, 같은 func에서 렌더링까지 처리할 수 있으니..!</p>
+</blockquote>
+
+</article>
+
+
+
+</div>
+</div>
+<script src="https://af1tgc.github.io/js/theme.min.js" type="text/javascript"></script>
+
+
+</body>
+</html>
+
