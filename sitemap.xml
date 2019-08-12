@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://af1tgc.github.io/music/secondary_dominant-substituted/</loc>
+    <lastmod>2019-08-12T21:57:47+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://af1tgc.github.io/development/web-tutorial-with-golang/</loc>
     <lastmod>2019-08-12T20:23:52+09:00</lastmod>
   </url>
@@ -64,13 +69,19 @@
   </url>
   
   <url>
+    <loc>https://af1tgc.github.io/music/</loc>
+    <lastmod>2019-08-12T21:57:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://af1tgc.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://af1tgc.github.io/</loc>
-    <lastmod>2019-08-12T20:23:52+09:00</lastmod>
+    <lastmod>2019-08-12T21:57:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   

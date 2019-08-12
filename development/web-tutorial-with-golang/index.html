@@ -28,6 +28,8 @@
         <h3 data-open="last-posts">Yosub - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://af1tgc.github.io/music/secondary_dominant-substituted/">Secondary Dominant &amp; Substituted</a></li>
+            
             <li><a href="https://af1tgc.github.io/development/web-tutorial-with-golang/">Web Tutorial With Golang</a></li>
             
             <li><a href="https://af1tgc.github.io/data-science/aws-ec2-jupyternotebook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">AWS-EC2에서의 Jupyter NoteBook 사용기</a></li>
@@ -125,7 +127,7 @@ Golang에 대한 호기심으로 방향을 바꿨다.
 
 <p>단순히 구조를 설명하면</p>
 
-<p>(1) 뷰페이지 선언 crawler.go - static/{view}.html</p>
+<h3 id="1-뷰페이지-선언-crawler-go-static-view-html">(1) 뷰페이지 선언 crawler.go - static/{view}.html</h3>
 
 <pre><code>func renderTemplate(w http.ResponseWriter, tmpl string, p *Page){
     t, err := template.ParseFiles(&quot;static/&quot; + tmpl +&quot;.html&quot;)
@@ -140,7 +142,7 @@ Golang에 대한 호기심으로 방향을 바꿨다.
 } 
 </code></pre>
 
-<p>(2) 라우팅 상세 설정 crawler.go</p>
+<h3 id="2-라우팅-상세-설정-crawler-go">(2) 라우팅 상세 설정 crawler.go</h3>
 
 <pre><code>func getCrawlUrlHandler(w http.ResponseWriter, r *http.Request){
     body := r.FormValue(&quot;body&quot;)
@@ -153,7 +155,7 @@ Golang에 대한 호기심으로 방향을 바꿨다.
 <p>post데이터는 FormValue(&ldquo;body&rdquo;)로 받으면 된다.</p>
 </blockquote>
 
-<p>(3) 라우팅 설정 crawler.go - 8080포트로 서비스</p>
+<h3 id="3-라우팅-설정-crawler-go-8080포트로-서비스">(3) 라우팅 설정 crawler.go - 8080포트로 서비스</h3>
 
 <pre><code>func main(){
     http.HandleFunc(&quot;/getUrl&quot;, getCrawlUrlHandler)
@@ -163,7 +165,7 @@ Golang에 대한 호기심으로 방향을 바꿨다.
 
 <p>..끝이다! <s>야호!</s></p>
 
-<p>(4) 렌더링 페이지 e.g.) /static/getUrl.html</p>
+<h3 id="4-렌더링-페이지-e-g-static-geturl-html">(4) 렌더링 페이지 e.g.) /static/getUrl.html</h3>
 
 <pre><code>&lt;body&gt;
 &lt;div class=&quot;container&quot;&gt;
