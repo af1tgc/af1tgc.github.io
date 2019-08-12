@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://af1tgc.github.io/etc/stackoverflow-backup/</loc>
+    <lastmod>2019-08-12T22:34:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://af1tgc.github.io/music/secondary_dominant-substituted/</loc>
     <lastmod>2019-08-12T21:57:47+09:00</lastmod>
   </url>
@@ -58,13 +63,13 @@
   
   <url>
     <loc>https://af1tgc.github.io/categories/et-cetera/</loc>
-    <lastmod>2019-08-07T09:36:34+09:00</lastmod>
+    <lastmod>2019-08-12T22:34:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://af1tgc.github.io/etc/</loc>
-    <lastmod>2019-08-07T09:36:34+09:00</lastmod>
+    <lastmod>2019-08-12T22:34:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,7 +92,7 @@
   
   <url>
     <loc>https://af1tgc.github.io/</loc>
-    <lastmod>2019-08-12T21:57:47+09:00</lastmod>
+    <lastmod>2019-08-12T22:34:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
